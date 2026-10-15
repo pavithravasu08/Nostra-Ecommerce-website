@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Nostra collection of modern everyday essentials.">
+    <title>Collections | Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Announcement-->
+    <div class="announcement">
+        New season, new stories — enjoy 20% off selected styles
+        <span>•</span> Use code <strong>NOSTRA20</strong>
+    </div>
+
+    <!--Header Section-->
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Nostra home">nostra<span>.</span></a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a  href="index.html">Home</a>
+            <a class="active" href="collections.html">Collections</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="contact.html">Get in Touch <span>↗️</span></a>
+    </header>
+
+    <!--Main Section-->
+    <main>
+        <section class="collection-hero">
+            <div>
+                <p class="eyebrow">THE NOSTRA EDIT / 2026</p>
+                <h1>Pieces for your<br><em>everyday story.</em></h1>
+                <p>Explore thoughtful staples, easy layers and little details that make a look your own.</p>
+            </div>
+            <div class="collection-hero-image"><img src="./images/collection-img1.jpg"
+                    alt="Minimal fashion store and clothing racks">
+            </div>
+        </section>
+
+
+        <!--Collection Section-->
+        <section class="section collection-section">
+            <div class="collection-toolbar">
+                <div>
+                    <p class="eyebrow">CURATED FOR YOU</p>
+                    <h2>All the good <em>stuff.</em></h2>
+                    <p id="results-count" class="results-count" aria-live="polite">Showing all products</p>
+                </div>
+                <div class="search-sort">
+                    <label class="search-box">
+                        <span>🔎</span>
+                        <input id="product-search" type="search" placeholder="Search products..."
+                            aria-label="Search products">
+                    </label>
+                    <label class="sort-label">Sort by
+                        <select id="sort-select" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="low-high">Price: low to high</option>
+                            <option value="high-low">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!--Collection Layout-->
+            <div class="collection-layout">
+                <aside class="filters" aria-label="Product filters">
+                    <div class="filter-heading">
+                        <h3>Filters</h3>
+                        <button id="clear-filters" class="clear-button" type="button">Clear all</button>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <label><input type="checkbox" name="category" value="Women"> Women
+                            <span>06</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="Men"> Men
+                            <span>05</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="Accessories"> Accessories
+                            <span>04</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="Essentials"> Essentials
+                            <span>03</span>
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Price range</h4>
+                        <label><input type="radio" name="price" value="all" checked> All prices
+                        </label>
+                        <label>
+                            <input type="radio" name="price" value="under1000"> Under ₹1,000
+                        </label>
+                        <label>
+                            <input type="radio" name="price" value="1000-2000"> ₹1,000 – ₹2,000
+                        </label>
+                        <label>
+                            <input type="radio" name="price" value="over2000"> Above ₹2,000
+                        </label>
+                    </div>
+                    <div class="filter-note">
+                        <span>✳</span>
+                        <p>Good style, less fuss. Find the pieces that feel like you.</p>
+                    </div>
+                </aside>
+
+
+                <!--Product Section-->
+                <div class="products-area">
+                    <div id="product-grid" class="product-grid collection-products">
+                        <article class="product-card" data-name="Everyday Utility Jacket" data-category="Women" data-price="2499">
+                            <div class="product-image">
+                                <img src="./images/product1.jpg" alt="Everyday utility jacket">
+                                <span class="product-badge">BESTSELLER</span>
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">WOMEN · OUTERWEAR</p>
+                                    <h3>Everyday Utility Jacket</h3>
+                                </div>
+                                <strong>₹2,499</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Essential Cotton Tee" data-category="Essentials" data-price="799">
+                            <div class="product-image">
+                                <img src="./images/product2.jpg" alt="Essential cotton t-shirt">
+                                <span class="product-badge badge-new">JUST IN</span>
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ESSENTIALS · BASICS</p>
+                                    <h3>Essential Cotton Tee</h3>
+                                </div>
+                                <strong>₹799</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Relaxed Fit Denim" data-category="Women" data-price="1899">
+                            <div class="product-image">
+                                <img src="./images/product3.jpg" alt="Relaxed fit denim jeans">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">WOMEN · DENIM</p>
+                                    <h3>Relaxed Fit Denim</h3>
+                                </div>
+                                <strong>₹1,899</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Everyday Mini Tote" data-category="Accessories" data-price="1299">
+                            <div class="product-image">
+                                <img src="./images/newarrivals-img4.jpg" alt="Everyday mini tote bag">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ACCESSORIES · BAGS</p>
+                                    <h3>Everyday Mini Tote</h3>
+                                </div>
+                                <strong>₹1,299</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Weekend Linen Shirt" data-category="Men" data-price="1599">
+                            <div class="product-image">
+                                <img src="./images/product4.jpg" alt="Men's linen shirt">
+                                <span class="product-badge badge-new">NEW</span>
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">MEN · SHIRTS</p>
+                                    <h3>Weekend Linen Shirt</h3>
+                                </div>
+                                <strong>₹1,599</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Soft Knit Pullover" data-category="Women" data-price="2199">
+                            <div class="product-image">
+                                <img src="./images/product5.jpg" alt="Soft knit pullover sweater">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">WOMEN · KNITWEAR</p>
+                                    <h3>Soft Knit Pullover</h3>
+                                </div>
+                                <strong>₹2,199</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Classic Everyday Sneakers" data-category="Men" data-price="1999">
+                            <div class="product-image">
+                                <img src="./images/product6.jpg" alt="Classic everyday sneakers">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">MEN · FOOTWEAR</p>
+                                    <h3>Classic Everyday Sneakers</h3>
+                                </div>
+                                <strong>₹1,999</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Minimal Gold Hoops" data-category="Accessories" data-price="699">
+                            <div class="product-image">
+                                <img src="./images/product7.jpg" alt="Minimal gold hoop earrings">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ACCESSORIES · JEWELLERY</p>
+                                    <h3>Minimal Silver Hoops</h3>
+                                </div>
+                                <strong>₹699</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Relaxed Graphic Tee" data-category="Men" data-price="899">
+                            <div class="product-image">
+                                <img src="./images/product8.jpg" alt="Relaxed graphic t-shirt">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">MEN · T-SHIRTS</p>
+                                    <h3>Relaxed Graphic Tee</h3>
+                                </div>
+                                <strong>₹899</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Everyday Crossbody" data-category="Accessories" data-price="1799">
+                            <div class="product-image">
+                                <img src="./images/product9.jpg" alt="Everyday crossbody bag">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ACCESSORIES · BAGS</p>
+                                    <h3>Everyday Crossbody</h3>
+                                </div>
+                                <strong>₹1,799</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Classic Oxford Shirt" data-category="Men" data-price="2299">
+                            <div class="product-image">
+                                <img src="./images/product10.jpg" alt="Classic oxford shirt">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">MEN · SHIRTS</p>
+                                    <h3>Classic Oxford Shirt</h3>
+                                </div>
+                                <strong>₹2,299</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Ribbed Tank Top" data-category="Essentials" data-price="599">
+                            <div class="product-image">
+                                <img src="./images/product11.jpg" alt="Ribbed tank top">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ESSENTIALS · BASICS</p>
+                                    <h3>Ribbed Tank Top</h3>
+                                </div>
+                                <strong>₹599</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Canvas Weekend Cap" data-category="Accessories" data-price="499">
+                            <div class="product-image">
+                                <img src="./images/product12.jpg" alt="Canvas cap">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ACCESSORIES · HATS</p>
+                                    <h3>Canvas Weekend Cap</h3>
+                                </div>
+                                <strong>₹499</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Classic Straight Trousers" data-category="Women" data-price="1999">
+                            <div class="product-image">
+                                <img src="./images/product13.jpg" alt="Classic straight trousers outfit">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">WOMEN · BOTTOMS</p>
+                                    <h3>Classic Straight Trousers</h3>
+                                </div>
+                                <strong>₹1,999</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Daily Carry Backpack" data-category="Accessories" data-price="2499">
+                            <div class="product-image">
+                                <img src="./images/product14.jpg" alt="Daily carry backpack">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ACCESSORIES · BAGS</p>
+                                    <h3>Daily Carry Backpack</h3>
+                                </div>
+                                <strong>₹2,499</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Soft Lounge Shorts" data-category="Essentials" data-price="999">
+                            <div class="product-image">
+                                <img src="./images/product15.jpg" alt="Soft lounge shorts">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">ESSENTIALS · LOUNGE</p>
+                                    <h3>Soft Lounge Shorts</h3>
+                                </div>
+                                <strong>₹999</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Weekend Overshirt" data-category="Men" data-price="2699">
+                            <div class="product-image">
+                                <img src="./images/product16.jpg" alt="Weekend overshirt">
+                            </div>
+                            <div class="product-info">
+                                <div><p class="product-category">MEN · OUTERWEAR</p>
+                                    <h3>Weekend Overshirt</h3>
+                                </div>
+                                <strong>₹2,699</strong>
+                            </div>
+                        </article>
+                        <article class="product-card" data-name="Easy Day Dress" data-category="Women" data-price="1799">
+                            <div class="product-image">
+                                <img src="./images/product17.jpg" alt="Easy day dress">
+                            </div>
+                            <div class="product-info">
+                                <div>
+                                    <p class="product-category">WOMEN · DRESSES</p>
+                                    <h3>Easy Day Dress</h3>
+                                </div>
+                                <strong>₹1,799</strong>
+                            </div>
+                        </article>
+                    </div>
+                    <div id="empty-state" class="empty-state" hidden>
+                        <span>⌕</span>
+                        <h3>No pieces found</h3>
+                        <p>Try another search or clear your filters to see all the good stuff.</p>
+                        <button class="button button-dark" id="empty-clear" type="button">Clear search & filters</button>
+                    </div>
+                </div>
+            </div>
+      </section>
+    </main>
+
+    
+    <!--Footer Section-->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <a class="logo logo-light" href="index.html">nostra
+                <span>.</span></a>
+                <p>Wear your story. Make it yours.</p>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+           <div class="footer-bottom">
+            <span>©️ 2026 Nostra Studio. Student project.</span>
+            <span>Made with care, worn everywhere ✳</span>
+        </div>
+        </footer>
+
+        <script src="script.js" defer></script>
+
+</body>
+
+</html>
